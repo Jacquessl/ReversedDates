@@ -13,7 +13,7 @@ public class Main {
             }
             else {
                 if ((actualYear % ((actualYearLength - 3) * 10) >= 2 || actualYear % (actualYearLength - 2) * 10 >= 13)) {
-                } else if ((actualYear / 10 * (actualYearLength - 2)) % 10 > 3) {
+                } else if (((actualYear / (10 * (actualYearLength - 2))) % 10) > 3) {
                 } else {
                     goTroughDates(actualYear);
                 }
